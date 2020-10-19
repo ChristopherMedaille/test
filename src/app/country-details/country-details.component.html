@@ -1,0 +1,20 @@
+
+    <div class="w-50 card-container mt-5">
+        <mat-card>
+            <h1><img class="w-25 pr-2" src="{{country.flag}}" /> {{country.name}} ({{country.nativeName}})</h1>
+            <p class="mb-1"><span class="row-titles">Capital :</span> {{country.capital}}</p>
+            <p class="mb-1"><span class="row-titles">Region :</span> {{country.region}} ({{country.subregion}})</p>
+            <span class="mb-1"><span class="row-titles">Languages :</span>
+                <ul>
+                    <li *ngFor="let language of country.languages">{{language.name}}</li>
+                </ul>
+            </span>
+
+            <span class="mb-1"><span class="row-titles">Currencies :</span>
+                <ul>
+                    <li *ngFor="let currency of country.currencies">{{currency.name}} ({{currency.symbol}})</li>
+                </ul>
+            </span>
+            <button mat-raised-button color="primary" class="w-100" (click)="OpenCountriesList()">Return to list</button>
+        </mat-card>
+    </div>

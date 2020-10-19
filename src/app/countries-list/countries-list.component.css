@@ -1,0 +1,24 @@
+table {
+    margin: 0 auto;
+}
+mat-paginator {
+    margin: 0 auto;
+}
+.mat-elevation-z8 {
+    box-shadow: none !important;
+    margin-top: 5rem !important;
+}
+.table-top {
+    margin: 0 auto;
+    background: white;
+    margin-bottom: 0.25rem;
+    border-radius: 5px;
+}
+.welcome-text {
+    width: 88%;
+    text-align: center;
+    font-weight: 500;
+}
+.logout-btn {
+    width: 12%;
+}
